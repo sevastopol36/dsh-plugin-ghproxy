@@ -1,0 +1,66 @@
+{
+  "name": "dsh-plugin-ghproxy",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness native plugin: fetch GitHub files, release assets, archives, gists and api.github.com JSON through public proxy mirrors with automatic health-checked failover",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevastopol36/dsh-plugin-ghproxy.git"
+  },
+  "homepage": "https://github.com/sevastopol36/dsh-plugin-ghproxy#readme",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": {
+      "default": "./lib/index.mjs"
+    },
+    "./lib/*": "./lib/*",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "verifiedRuntimes": [
+        "0.1.5-rc.1",
+        "0.2.0-rc.2"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "github",
+    "proxy",
+    "sevastopol36-ghproxy",
+    "mirror",
+    "download",
+    "release",
+    "archive",
+    "clone"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sevastopol36/dsh-plugin-ghproxy/issues"
+  }
+}

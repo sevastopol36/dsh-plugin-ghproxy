@@ -1,0 +1,11 @@
+# dsh-plugin-ghproxy bundle patch
+# Registers the GitHub proxy plugin into the DSH composition.
+#
+# Recommended install:
+#   dsh plugin --profile web add ./dsh-plugin-ghproxy
+#
+# Or apply as an overlay without installing:
+#   dsh web --patch /path/to/dsh-plugin-ghproxy/cordis.patch.yml
+- insert:
+    - id: sevastopol36-ghproxy
+      name: 'dsh-plugin-ghproxy'

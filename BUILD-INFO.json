@@ -1,0 +1,24 @@
+{
+  "package": "dsh-plugin-ghproxy",
+  "version": "0.2.0",
+  "repository": "git+https://github.com/sevastopol36/dsh-plugin-ghproxy.git",
+  "peerRange": {
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6"
+  },
+  "verifiedRuntimes": [
+    "0.1.5-rc.1",
+    "0.2.0-rc.2"
+  ],
+  "note": "lib/ is copied byte for byte from the tested sources; the hashes below let a reader confirm that.",
+  "files": {
+    ".gitignore": "7ef99eceaf0f528de5eb762823a910fe556df5014a9dc3083ae993124495eba9",
+    "LICENSE": "30fbb2ccd8fd3148c3e9e8b54c114c3664a78aeb5f952de5d37a6059b6d37064",
+    "README.md": "b84747aa3702eaf7dca253fdb2044920721c6ccd2988f2ee24e1a212fa25f0a5",
+    "cordis.patch.yml": "72c6deda822ca39e2715ffe050e0cba3ea86a5b959278c9c5c0723081013b1c6",
+    "dsh-plugin.naming.json": "4870cc9b2647d6dda2733acfe9f430af34b3d17aace13a7cf303c97f95ee9f65",
+    "lib/index.mjs": "5e59991fb7ef5ed1935fbfdcafaa71156838ebd1496565e9cbc2edbed5330175",
+    "lib/semver-range.mjs": "accf84e87722f6941c63915fbc5e93aef1d55d20e54d6ef5d8d1d2b9147a3a64",
+    "package.json": "b59641b7fad8a85cf139d155459b9c3190f3b1fb267cfb10adb98fa497f3f291",
+    "verify.mjs": "cb86da931c986842413abfc0ef41a5d084d170245f5ba5e2c90499c11c17defc"
+  }
+}
